@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Scheme Generator</title>
+  <link rel="shortcut icon" href="./images/color-palette.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+</head>
+
+<body>
+  <main class="main">
+    <form class="color-form" id="color-form">
+      <input type="color" class="hex-input" name="hex-input" id="hex-input">
+      <select class="form-input" name="mode-input" id="mode-input">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+        <option value="quad">Quad</option>
+      </select>
+      <input type="number" class="form-input" name="count-input" id="count-input" placeholder="5" min="5" max="20" step="1">
+      <button class="submit-btn" type="submit">Get color scheme</button>
+    </form>
+    <section class="result" id="result">
+    </section>
+  </main>
+</body>
+</html>
